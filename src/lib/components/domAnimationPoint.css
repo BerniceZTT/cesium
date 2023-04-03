@@ -1,0 +1,56 @@
+.cesium-domPoint div{
+    background:rgb(255, 136, 0);
+    width: 16px;
+    height: 16px;
+    /* border: 4px #009FD9 solid; */
+    border-radius:50%;
+    position: relative;
+}
+
+.cesium-domPoint p, .cesium-domPoint span{
+    display: inline-block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    animation: myfirst 1.5s  infinite;
+    box-shadow: 0px 0px 2px rgb(255, 136, 0); 
+    margin: 0px;
+}
+.cesium-domPoint p{
+    width: 8px;
+    height: 8px;
+    left: 50%;
+    top: 50%;
+    margin-top: -4px;
+    margin-left: -4px;
+}
+
+.cesium-domPoint  span{
+    width: 4px;
+    height: 4px;
+    left: 50%;
+    top: 50%;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+.cesium-domPoint .one{
+    position: absolute;
+    left:600px; 
+    top:100px;
+}
+
+.cesium-domPoint .one .text {
+    white-space: nowrap;
+    width: 0;
+    height: 0;
+    font-size: 1.2rem;
+    transform: translate(2rem, -0.5rem);
+    color: greenyellow;
+}
+
+@keyframes myfirst{
+    10% {transform: scale(1);}
+    100% {transform: scale(8);}
+}
